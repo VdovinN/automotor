@@ -1,4 +1,4 @@
-import 'package:automotor/screen/splash/splash_page.dart';
+import 'package:automotor/screen/onboarding/onboarding_page.dart';
 import 'package:automotor/util/routes.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +14,7 @@ class AutoMotorApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      initialRoute: SplashPage.routeName,
+      initialRoute: OnBoardingPage.routeName,
       routes: routes,
       debugShowCheckedModeBanner: false,
     );
