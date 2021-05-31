@@ -1,3 +1,4 @@
+import 'package:automotor/screen/onboarding/component/catalog/search/search_field.dart';
 import 'package:flutter/material.dart';
 
 class CatalogPage extends StatelessWidget {
@@ -9,8 +10,17 @@ class CatalogPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.grey,
+    return SafeArea(
+      child: Container(
+        child: Row(
+          children: [
+            Expanded(
+              child: SearchField(),
+            ),
+          ],
+        ),
+        color: Colors.white,
+      ),
     );
   }
 }

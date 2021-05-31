@@ -10,8 +10,8 @@ class AutoMotorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "AutoMotor",
       theme: ThemeData(
+        textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.grey),
         primarySwatch: Colors.red,
       ),
       initialRoute: OnBoardingPage.routeName,
